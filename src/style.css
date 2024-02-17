@@ -4,7 +4,7 @@
 }
 
 header {
-  padding: 2% 550px;
+  padding: 3% 550px;
   background-color: var(--primary-light);
 }
 
@@ -50,61 +50,61 @@ h2 {
 
 @media (max-width: 1898px) {
   header {
-    padding: 2% 450px;
+    padding: 3% 450px;
   }
 }
 
 @media (max-width: 1698px) {
   header {
-    padding: 2% 430px;
+    padding: 3% 430px;
   }
 }
 
 @media (max-width: 1658px) {
   header {
-    padding: 2% 400px;
+    padding: 3% 400px;
   }
 }
 
 @media (max-width: 1598px) {
   header {
-    padding: 2% 350px;
+    padding: 3% 350px;
   }
 }
 
 @media (max-width: 1498px) {
   header {
-    padding: 2% 300px;
+    padding: 3% 300px;
   }
 }
 
 @media (max-width: 1498px) {
   header {
-    padding: 2% 250px;
+    padding: 3% 250px;
   }
 }
 
 @media (max-width: 1397px) {
   header {
-    padding: 2% 200px;
+    padding: 3% 200px;
   }
 }
 
 @media (max-width: 1198px) {
   header {
-    padding: 2% 150px;
+    padding: 3% 150px;
   }
 }
 
 @media (max-width: 1098px) {
   header {
-    padding: 2% 100px;
+    padding: 3% 100px;
   }
 }
 
 @media (max-width: 999px) {
   header {
-    padding: 2% 200px;
+    padding: 3% 200px;
   }
   h1 {
     font-size: 52px;
@@ -133,25 +133,25 @@ h2 {
 
 @media (max-width: 923px) {
   header {
-    padding: 2% 150px;
+    padding: 3% 150px;
   }
 }
 
 @media (max-width: 823px) {
   header {
-    padding: 2% 100px;
+    padding: 3% 100px;
   }
 }
 
 @media (max-width: 723px) {
   header {
-    padding: 2% 30px;
+    padding: 3% 30px;
   }
 }
 
 @media (max-width: 583px) {
   header {
-    padding: 2% 10px;
+    padding: 3% 10px;
   }
 }
 
@@ -173,7 +173,7 @@ h2 {
 
   .container {
     text-align: center;
-    margin-top: 15px;
+    margin: 15px 0;
   }
 
   .header-img-left {
