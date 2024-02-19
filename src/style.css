@@ -1,5 +1,7 @@
 :root {
   --primary-light: #26a69a;
+  --secondary-light: #e0f2f1;
+  --white: #ffffff;
   --primary-dark: #376b6c;
 }
 
@@ -8,15 +10,63 @@ header {
   background-color: var(--primary-light);
 }
 
-h1 {
+.body-center {
+  padding: 3% 550px;
+}
+
+.bg-green {
+  background-color: var(--secondary-light);
+}
+
+h1,
+h2,
+h4 {
   font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  color: white;
+}
+
+h3,
+h5,
+p,
+ul,
+.about-button,
+.contact-button,
+.footer-text {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h3,
+ul,
+.about-button,
+.contact-button,
+.footer-links,
+.footer-text {
+  color: var(--white);
+}
+
+.about-button,
+.contact-button {
+  background-color: var(--primary-light);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-button:hover,
+.contact-button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all 200ms ease-in-out;
+}
+
+h1 {
   font-size: 82px;
   margin: 0;
   padding: 0;
   justify-content: right;
   line-height: 0.85;
+  margin: 15px 0;
 }
 
 .h1-content {
@@ -24,12 +74,9 @@ h1 {
   margin-bottom: 14px;
 }
 
-h2 {
-  font-family: "Poppins", sans-serif;
+h3 {
   font-weight: 300;
   font-size: 24px;
-  color: white;
-  margin-top: 15px;
 }
 
 .header-img-left {
@@ -48,65 +95,158 @@ h2 {
   height: auto;
 }
 
+h4 {
+  text-align: center;
+  color: var(--primary-light);
+  font-size: 36px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  color: var(--primary-light);
+  font-size: 36px;
+}
+
+p {
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-button {
+  padding: 10px;
+}
+
+h5 {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.contact-container {
+  text-align: center;
+  border: 2px solid var(--primary-light);
+  border-radius: 6px;
+  padding: 45px 0;
+  margin-bottom: 30px;
+}
+
+.contact-button {
+  padding: 12px 45px;
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: var(--primary-light);
+}
+
+.footer-part-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+li {
+  margin: 4px 0;
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.footer-links {
+  text-decoration: none;
+}
+
+.footer-text {
+  font-weight: 100;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 25px;
+}
+
 @media (max-width: 1898px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 450px;
   }
 }
 
 @media (max-width: 1698px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 430px;
   }
 }
 
 @media (max-width: 1658px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 400px;
   }
 }
 
 @media (max-width: 1598px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 350px;
   }
 }
 
 @media (max-width: 1498px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 300px;
   }
 }
 
 @media (max-width: 1498px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 250px;
   }
 }
 
 @media (max-width: 1397px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 200px;
   }
 }
 
 @media (max-width: 1198px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 150px;
   }
 }
 
 @media (max-width: 1098px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 100px;
   }
 }
 
 @media (max-width: 999px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 200px;
   }
-  h1 {
+  h1,
+  .body-center {
     font-size: 52px;
     justify-content: left;
   }
@@ -115,7 +255,7 @@ h2 {
     justify-content: center;
     margin-bottom: 12px;
   }
-  h2 {
+  h3 {
     font-size: 15px;
     margin-top: 12px;
   }
@@ -129,22 +269,68 @@ h2 {
     width: 160px;
     height: auto;
   }
+
+  .sunrise-yoga-text {
+    font-size: 18px;
+    margin-top: 25px !important;
+  }
+
+  h4 {
+    margin-top: 15px;
+  }
+
+  .yoga-benefit-text {
+    font-size: 18px;
+    margin: 5px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    line-height: 2;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  .about-button {
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 923px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 150px;
   }
 }
 
 @media (max-width: 823px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 100px;
   }
 }
 
+@media (max-width: 767px) {
+  .yoga-benefit-text {
+    font-size: 18px;
+    margin: 5px !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
+
 @media (max-width: 723px) {
-  header {
+  header,
+  .body-center {
     padding: 3% 30px;
   }
 }
@@ -166,7 +352,7 @@ h2 {
     justify-content: center;
   }
 
-  h2 {
+  h3 {
     font-size: 16px;
     text-align: center;
   }
@@ -185,6 +371,10 @@ h2 {
   .header-img-right {
     width: 200px;
     height: auto;
+  }
+
+  h4 {
+    font-size: 30px;
   }
 }
 
