@@ -22,12 +22,13 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="/src/app.js"></script>
   </head>
   <body>
     <div class="body-center contact-header">
       <h1 class="pb-2">Get in Touch</h1>
     </div>
-    <form class="pt-5 body-center">
+    <form class="pt-5 body-center" onsubmit="handleSubmit(event)">
       <div>
         <label for="firstName">What is your first name?</label>
         <input type="text" id="firstName" class="p-1 mt-2" required />
