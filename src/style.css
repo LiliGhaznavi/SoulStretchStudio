@@ -28,6 +28,7 @@ h3,
 h5,
 p,
 ul,
+form,
 .about-button,
 .contact-button,
 .footer-text {
@@ -54,7 +55,8 @@ ul,
 }
 
 .about-button:hover,
-.contact-button:hover {
+.contact-button:hover,
+.submit-button:hover {
   cursor: pointer;
   opacity: 0.9;
   transition: all 200ms ease-in-out;
@@ -173,7 +175,8 @@ li {
   margin-top: 25px;
 }
 
-.about-header {
+.about-header,
+.contact-header {
   background-color: var(--primary-light);
 }
 
@@ -195,6 +198,42 @@ li {
 
 .teachers-img {
   border: 3px solid var(--primary-light);
+}
+
+.contact-header h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+form {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.input-container {
+  margin-top: 25px;
+}
+
+input,
+select,
+textarea {
+  background-color: var(--secondary-light);
+  border: 1px solid var(--primary-light);
+  width: 100%;
+  border-radius: 6px;
+}
+
+.submit-button {
+  background-color: var(--primary-light);
+  padding: 15px 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 6px;
+  display: block;
+  margin: 50px auto;
+  font-weight: 400;
 }
 
 @media (max-width: 1898px) {
@@ -317,7 +356,27 @@ li {
   }
 
   .student-name {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  form {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input,
+  select,
+  textarea {
+    height: 40px;
+    width: 100%;
+  }
+
+  select {
+    font-size: 15px !important;
   }
 }
 
