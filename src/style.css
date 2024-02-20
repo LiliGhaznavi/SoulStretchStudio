@@ -1,13 +1,12 @@
 :root {
-  --primary-light: #26a69a;
-  --secondary-light: #e0f2f1;
+  --primary-color: #26a69a;
+  --secondary-color: #e0f2f1;
   --white: #ffffff;
-  --primary-dark: #376b6c;
 }
 
 header {
   padding: 3% 550px;
-  background-color: var(--primary-light);
+  background-color: var(--primary-color);
 }
 
 .body-center {
@@ -15,7 +14,7 @@ header {
 }
 
 .bg-green {
-  background-color: var(--secondary-light);
+  background-color: var(--secondary-color);
 }
 
 h1,
@@ -26,6 +25,7 @@ h4 {
 
 h3,
 h5,
+h6,
 p,
 ul,
 form,
@@ -47,7 +47,7 @@ ul,
 
 .about-button,
 .contact-button {
-  background-color: var(--primary-light);
+  background-color: var(--primary-color);
   text-align: center;
   text-decoration: none;
   border-radius: 6px;
@@ -77,7 +77,7 @@ h1 {
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 24px;
 }
 
@@ -99,7 +99,7 @@ h3 {
 
 h4 {
   text-align: center;
-  color: var(--primary-light);
+  color: var(--primary-color);
   font-size: 36px;
 }
 
@@ -110,7 +110,7 @@ h4 {
 }
 
 h2 {
-  color: var(--primary-light);
+  color: var(--primary-color);
   font-size: 36px;
 }
 
@@ -132,7 +132,7 @@ h5 {
 
 .contact-container {
   text-align: center;
-  border: 2px solid var(--primary-light);
+  border: 2px solid var(--primary-color);
   border-radius: 6px;
   padding: 45px 0;
   margin-bottom: 30px;
@@ -146,7 +146,7 @@ h5 {
 }
 
 footer {
-  background-color: var(--primary-light);
+  background-color: var(--primary-color);
 }
 
 .footer-part-container {
@@ -177,7 +177,7 @@ li {
 
 .about-header,
 .contact-header {
-  background-color: var(--primary-light);
+  background-color: var(--primary-color);
 }
 
 .about-header h1 {
@@ -196,8 +196,12 @@ li {
   padding: 10px;
 }
 
+.green-text {
+  color: var(--primary-color) !important;
+}
+
 .teachers-img {
-  border: 3px solid var(--primary-light);
+  border: 3px solid var(--primary-color);
 }
 
 .contact-header h1 {
@@ -218,14 +222,14 @@ form {
 input,
 select,
 textarea {
-  background-color: var(--secondary-light);
-  border: 1px solid var(--primary-light);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
   width: 100%;
   border-radius: 6px;
 }
 
 .submit-button {
-  background-color: var(--primary-light);
+  background-color: var(--primary-color);
   padding: 15px 50px;
   border: none;
   color: #ffffff;
@@ -236,10 +240,47 @@ textarea {
   font-weight: 400;
 }
 
+nav {
+  padding: 10px 550px;
+}
+
+h6 {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+  font-weight: 300;
+}
+
+nav ul li a {
+  list-style: none;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav ul li.active {
+  font-weight: 500;
+}
+
 @media (max-width: 1898px) {
   header,
   .body-center {
     padding: 3% 450px;
+  }
+  nav {
+    padding: 10px 450px;
   }
 }
 
@@ -248,12 +289,18 @@ textarea {
   .body-center {
     padding: 3% 430px;
   }
+  nav {
+    padding: 10px 430px;
+  }
 }
 
 @media (max-width: 1658px) {
   header,
   .body-center {
     padding: 3% 400px;
+  }
+  nav {
+    padding: 10px 400px;
   }
 }
 
@@ -262,12 +309,18 @@ textarea {
   .body-center {
     padding: 3% 350px;
   }
+  nav {
+    padding: 10px 350px;
+  }
 }
 
 @media (max-width: 1498px) {
   header,
   .body-center {
     padding: 3% 300px;
+  }
+  nav {
+    padding: 10px 300px;
   }
 }
 
@@ -276,12 +329,18 @@ textarea {
   .body-center {
     padding: 3% 250px;
   }
+  nav {
+    padding: 10px 250px;
+  }
 }
 
 @media (max-width: 1397px) {
   header,
   .body-center {
     padding: 3% 200px;
+  }
+  nav {
+    padding: 10px 200px;
   }
 }
 
@@ -290,12 +349,18 @@ textarea {
   .body-center {
     padding: 3% 150px;
   }
+  nav {
+    padding: 10px 150px;
+  }
 }
 
 @media (max-width: 1098px) {
   header,
   .body-center {
     padding: 3% 100px;
+  }
+  nav {
+    padding: 10px 100px;
   }
 }
 
@@ -304,6 +369,11 @@ textarea {
   .body-center {
     padding: 3% 200px;
   }
+
+  nav {
+    padding: 10px 200px;
+  }
+
   h1,
   .body-center {
     font-size: 52px;
@@ -385,12 +455,19 @@ textarea {
   .body-center {
     padding: 3% 150px;
   }
+
+  nav {
+    padding: 10px 150px;
+  }
 }
 
 @media (max-width: 823px) {
   header,
   .body-center {
     padding: 3% 100px;
+  }
+  nav {
+    padding: 10px 100px;
   }
 }
 
@@ -399,11 +476,17 @@ textarea {
   .body-center {
     padding: 3% 30px;
   }
+  nav {
+    padding: 10px 30px;
+  }
 }
 
 @media (max-width: 583px) {
   header {
     padding: 3% 10px;
+  }
+  nav {
+    padding: 10px 10px;
   }
 }
 
@@ -444,7 +527,31 @@ textarea {
   }
 }
 
-@media (max-width: 309px) {
+@media (max-width: 442px) {
+  h2 {
+    font-size: 30px;
+  }
+  .footer-text {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 357px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h6,
+  nav ul li a {
+    font-size: 10px;
+  }
+
+  h6 {
+    line-height: 2.5;
+  }
+}
+
+@media (max-width: 315px) {
   .header-img-left {
     bottom: -37px;
     width: 30px;
@@ -454,5 +561,13 @@ textarea {
   .header-img-right {
     width: 100px;
     height: auto;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .footer-text {
+    font-size: 8px;
   }
 }
