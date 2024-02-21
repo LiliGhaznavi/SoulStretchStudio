@@ -192,16 +192,16 @@ li {
 
 .about-header .contact-button {
   background-color: #ffffff;
-  color: var(--primary-light);
+  color: var(--primary-color);
   padding: 10px;
-}
-
-.green-text {
-  color: var(--primary-color) !important;
 }
 
 .teachers-img {
   border: 3px solid var(--primary-color);
+}
+
+.about-header h1 {
+  font-size: 34px;
 }
 
 .contact-header h1 {
@@ -421,8 +421,16 @@ nav ul li.active {
   }
 
   .about-header h1 {
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .about-header p {
+    font-size: 9px;
+  }
+
+  .about-header .contact-button {
+    padding: 6px;
+    font-size: 14px;
   }
 
   .student-name {
@@ -447,6 +455,22 @@ nav ul li.active {
 
   select {
     font-size: 15px !important;
+  }
+}
+
+@media (max-width: 999px) {
+  .about-header h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .about-header p {
+    font-size: 18px;
+  }
+
+  .about-header .contact-button {
+    padding: 10px;
+    font-size: 18px;
   }
 }
 

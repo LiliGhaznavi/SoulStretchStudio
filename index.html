@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoulStretch Studio: Online Yoga Classes for All Levels</title>
+    <meta
+      name="description"
+      content="Discover the perfect balance of mind, body, and soul with SoulStretch Studio's online yoga classes for all levels. From beginner-friendly flows to advanced sessions, unlock inner peace and strength from the comfort of your home. Join our diverse community today!"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,9 +32,13 @@
     <nav class="d-flex justify-content-between">
       <h6>SoulStretch Studio</h6>
       <ul>
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">contact</a></li>
+        <li class="active">
+          <a href="/" title="SoulStretch Studio Homepage">Home</a>
+        </li>
+        <li><a href="about.html" title="About SoulStretch Studio">About</a></li>
+        <li>
+          <a href="contact.html" title="Contact SoulStretch Studio">contact</a>
+        </li>
       </ul>
     </nav>
     <header>
@@ -69,12 +77,18 @@
             practice of yoga. Join us on this transformative journey toward
             inner peace and holistic wellness.
           </p>
-          <a href="/about.html" class="about-button">More about us</a>
+          <a
+            href="/about.html"
+            class="about-button"
+            title="About SooulStretch Studio"
+            >More about us</a
+          >
         </div>
         <div class="d-none d-lg-block col-lg-6">
           <img
             src="/images/womanInPark.webp"
             class="img-fluid rounded-3 mt-3"
+            alt="Yoga practitioner enjoying outdoor yoga session in the park"
           />
         </div>
       </div>
@@ -88,8 +102,10 @@
             <div class="col-sm-4">
               <div class="class-pic-container">
                 <img
+                  id="vinyasaFlowYoga"
                   src="/images/vinyasaFlowYoga.webp"
                   class="img-fluid rounded-3"
+                  alt="Two women engaged in Vinyasa Flow Yoga amidst nature at the park"
                 />
                 <h5>Vinyasa Flow Yoga</h5>
                 <p>
@@ -103,8 +119,10 @@
             <div class="col-sm-4">
               <div class="class-pic-container">
                 <img
+                  id="restorativeYoga"
                   src="/images/RestorativeYoga.webp"
                   class="img-fluid rounded-3"
+                  alt="Group of women experiencing Restorative Yoga in serene park surroundings"
                 />
                 <h5>Restorative Yoga</h5>
                 <p>
@@ -118,8 +136,10 @@
             <div class="col-sm-4">
               <div class="class-pic-container">
                 <img
+                  id="yogFoBeginners"
                   src="/images/yogaForBeginners.webp"
                   class="img-fluid rounded-3"
+                  alt="Three individuals participating in beginner-friendly yoga session amidst park scenery"
                 />
                 <h5>Yoga for Beginners</h5>
                 <p>
@@ -137,7 +157,10 @@
     <div class="body-center">
       <div class="contact-container">
         <h4>To reserve a class, get in touch with us:</h4>
-        <a href="/contact.html" class="contact-button fw-semibold"
+        <a
+          href="/contact.html"
+          class="contact-button fw-semibold"
+          title="Contact SoulStretch Studio"
           >Contact Us</a
         >
       </div>
@@ -149,13 +172,29 @@
           <ul>
             <li class="fw-semibold">Yoga Classes</li>
             <li>
-              <a href="#" class="footer-links" target="_blank">Vinyasa Flow</a>
+              <a
+                href="/index.html#vinyasaFlowYoga"
+                class="footer-links"
+                target="_blank"
+                title="Vinyasa Flow Yoga Classes"
+                >Vinyasa Flow</a
+              >
             </li>
             <li>
-              <a href="#" class="footer-links" target="_blank">Restorative</a>
+              <a
+                href="/index.html#restorativeYoga"
+                class="footer-links"
+                target="_blank"
+                title="Restorative Yoga classes"
+                >Restorative</a
+              >
             </li>
             <li>
-              <a href="#" class="footer-links" target="_blank"
+              <a
+                href="/index.html#yogFoBeginners"
+                class="footer-links"
+                target="_blank"
+                title="Beginners Level Yoga Classes"
                 >Beginners Level</a
               >
             </li>
@@ -169,6 +208,7 @@
                 href="#https://yogainternational.com/articles/?topic=Practice"
                 class="footer-links"
                 target="_blank"
+                title="Articles about Practice"
                 >Practice</a
               >
             </li>
@@ -177,6 +217,7 @@
                 href="https://yogainternational.com/articles/?topic=Yoga+Therapy"
                 class="footer-links"
                 target="_blank"
+                title="Articles about Yoga Therapy"
                 >Yoga Therapy</a
               >
             </li>
@@ -185,6 +226,7 @@
                 href="https://yogainternational.com/articles/?topic=Ayurveda"
                 class="footer-links"
                 target="_blank"
+                title="Articles about Ayurveda"
                 >Ayurveda</a
               >
             </li>
@@ -193,6 +235,7 @@
                 href="https://yogainternational.com/poses/"
                 class="footer-links"
                 target="_blank"
+                title="Articles about Poses"
                 >Poses</a
               >
             </li>
@@ -201,12 +244,20 @@
         <div>
           <ul>
             <li class="fw-semibold">
-              <a href="/about.html" class="footer-links" target="_blank"
+              <a
+                href="/about.html"
+                class="footer-links"
+                target="_blank"
+                title="About SoulStretch Studio"
                 >About</a
               >
             </li>
             <li class="fw-semibold">
-              <a href="/contact.html" class="footer-links" target="_blank"
+              <a
+                href="/contact.html"
+                class="footer-links"
+                target="_blank"
+                title="Contact SoulStretch Studio"
                 >Contact</a
               >
             </li>
