@@ -178,6 +178,7 @@ li {
 .about-header,
 .contact-header {
   background-color: var(--primary-color);
+  margin-top: 20px;
 }
 
 .about-header h1 {
@@ -242,10 +243,16 @@ textarea {
 
 nav {
   padding: 10px 550px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: var(--primary-color);
 }
 
 h6 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -265,7 +272,7 @@ nav ul li {
 
 nav ul li a {
   list-style: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 14px;
 }
