@@ -252,11 +252,15 @@ nav {
 }
 
 h6 {
-  color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   margin: 0;
+}
+
+h6 a {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 ul {
